@@ -1,4 +1,3 @@
-//statusMessage
 import React, { ReactNode } from 'react';
 import { BiLogoCss3, BiLogoHtml5, BiLogoJavascript, BiLogoPython, BiLogoReact, BiLogoTypescript, BiLogoJava } from 'react-icons/bi';
 import { RiFileExcel2Fill } from 'react-icons/ri';
@@ -14,7 +13,6 @@ import {
     SiExpress,
     SiFastapi,
     SiSupabase,
-    SiSprintboot,
     SiJquery,
     SiKalilinux,
     SiKotlin,

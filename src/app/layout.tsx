@@ -5,6 +5,7 @@ import { NextFont } from 'next/dist/compiled/@next/font';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Footer from "@/app/component/layout/Footer";
+import { Providers } from "@/app/provider";
 import "@/app/style/globals.css";
 import { NavigationBar } from "@/app/component/layout/navbar";
 
@@ -22,11 +23,13 @@ export default async function RootLayout({children}: {children: ReactNode}) {
                 <Analytics />
                 <SpeedInsights />
                 <Suspense>
-                    <div className='flex h-screen flex-col'>
-                        <NavigationBar />
-                        <div className='mb-auto'>{children}</div>
-                        <Footer/>
-                    </div>
+                    <Providers>
+                        <div className='flex h-screen flex-col'>
+                            <NavigationBar />
+                            <div className='mb-auto'>{children}</div>
+                            <Footer/>
+                        </div>
+                    </Providers>
                 </Suspense>
             </body>
         </html>

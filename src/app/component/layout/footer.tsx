@@ -28,12 +28,12 @@ const SnsLinks: SnsLinkProps[] = [
     },
 ];
 
-export default async function Footer() {
+export default function Footer() {
     return (
-        <footer className='w-full'>
-            <Divider className='my-14 mt-10' />
-            <div className='m-5 justify-center'>
-                <div className='mb-3'>
+        <footer className='w-full flex flex-col items-center'>
+            <Divider className='my-14 mt-10 w-full' />
+            <div className='m-5 flex flex-col items-center'>
+                <div className='mb-3 flex flex-row justify-center'>
                     {SnsLinks.map((snsLink: SnsLinkProps, index: number) => (
                         <Link
                             key={index}
@@ -52,7 +52,7 @@ export default async function Footer() {
                     href='https://twitter.com/aida_0710'
                     isBlock
                     showAnchorIcon
-                    className='mb-3 text-medium font-normal'>
+                    className='mb-3 text-medium font-normal text-center'>
                     <p>© {new Date().getFullYear()} Masaki Aoki. All Rights Reserved.</p>
                 </Link>
             </div>

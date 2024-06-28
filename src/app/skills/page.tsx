@@ -4,7 +4,6 @@ import { Skills } from '@/app/component/skills';
 import {Card, CardBody} from '@nextui-org/card';
 import SkillCard from '@/app/skills/component/skill-card';
 import {framework, databases, others, programmingLanguages, hardrelated } from '@/app/skills/data-store';
-import { NextPage } from 'next';
 
 export const metadata: Metadata = {
     title: 'Skills',

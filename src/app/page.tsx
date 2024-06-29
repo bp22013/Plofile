@@ -2,7 +2,6 @@ import React from "react";
 import { Image } from '@nextui-org/image';
 import { Phone, CircleUser, PenToolIcon } from 'lucide-react';
 import { Link, Button } from "@nextui-org/react";
-import { NoSSR } from '@/utils/no-ssr';
 import "@/app/style/globals.css";
 
 export default function Home(){

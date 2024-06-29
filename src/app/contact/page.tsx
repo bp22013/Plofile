@@ -36,7 +36,7 @@ const Content: NextPage = () => {
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement='top-center' backdrop="blur" size='full' className='bg-green-300'>
               <ModalContent>
                 <ModalBody>
-                  <div className="mb-10 text-xl font-bold text-center text-black text-6xl flex justify-center">お問い合わせ完了しました。</div>
+                  <div className="mb-10 text-xl font-bold text-center text-black text-8xl flex justify-center">お問い合わせ完了しました。</div>
                 </ModalBody>
               </ModalContent>
             </Modal>

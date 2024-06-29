@@ -1,12 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { React } from 'react';
 import { NextPage } from 'next';
 import { Accordion, AccordionItem, Image, Spacer, DateInput } from '@nextui-org/react';
 import { CalendarDate, parseDate } from '@internationalized/date'
 
 const About: NextPage = () => {
-    const [selectedKeys, setSelectedKeys] = useState(new Set(["1"]));
 
     return (
         <div className='my-auto'>
@@ -32,7 +31,7 @@ const About: NextPage = () => {
                     <div className='ml-20 mr-auto flex items-center my-auto'>
                         <div className="flex items-center">
                             <div className="ml-16 mb-5">
-                                <Accordion variant="shadow" selectedKeys={selectedKeys} onSelectionChange={setSelectedKeys}>
+                                <Accordion variant="shadow">
                                     <AccordionItem key="1" title="自分について" className='justify-center'>
                                         <ul>
                                             <li>

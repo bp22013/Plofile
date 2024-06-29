@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, React}from 'react';
+import { useState } from 'react';
 import { NextPage } from 'next';
 import { Accordion, AccordionItem, Image, Spacer, DateInput } from '@nextui-org/react';
 import { CalendarDate, parseDate } from '@internationalized/date'

@@ -19,9 +19,6 @@ export default function Home(){
             <h6 className='text-lg font-medium tracking-wide md:text-2xl'>Masaki Aoki / 青木 雅季</h6>
             <p className='text-md mt-2 font-normal tracking-wide md:text-xl'>芝浦工業大学 3年 </p>
             <p className='text-md font-normal tracking-wide md:text-xl'>Mail : bp22013@shibaura-it.ac.jp</p>
-            <NoSSR>
-                <p></p>
-            </NoSSR>
             <div className='mb-12 mt-16 flex justify-center gap-3'>
                 <Link href='about'>
                     <Button

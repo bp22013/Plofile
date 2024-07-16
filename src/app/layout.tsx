@@ -3,6 +3,7 @@ import React, { ReactNode, Suspense } from 'react';
 import { Inter } from "next/font/google";
 import { NextFont } from 'next/dist/compiled/@next/font';
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Footer from '@/app/component/layout/footer';
 import { NavigationBar } from "@/app/component/layout/navbar";
@@ -18,6 +19,7 @@ const site_description: string = '@masaki_0218のプロフィールページ';
 const twitter_id: string = '@masaki_0218';
 const url: string = 'https://plofile.vercel.app/';
 const image: string = `${url}/public_image.png`;
+const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
     title: {
@@ -62,6 +64,7 @@ export default function RootLayout({children}: {children: ReactNode}) {
         <html lang='ja'>
             <body className={inter.className}>
                 <ToastProvider>
+                    {gaId && <GoogleAnalytics gaId={gaId} />}
                     <Analytics />
                     <SpeedInsights />
                     <Suspense>
